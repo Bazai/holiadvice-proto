@@ -2,7 +2,7 @@
   "name": "fhirplace-spa-ui",
   "version": "0.0.0",
   "dependencies": {
-    "bootstrap": "latest",
+    "bootstrap": "3.3.1",
     "angular": "latest",
     "angular-cookies": "latest",
     "angular-sanitize": "latest",
