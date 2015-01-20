@@ -7,97 +7,50 @@
     <title>Hello there</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
-    <link rel="shortcut icon" href="imgs/logo.png">
-     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" /> 
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
     <link rel="stylesheet" href="app.css" />
 </head>
 
-<body class="container-fluid">
-    <nav class="navbar pt-header-nav navbar-static-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a href="#" class="navbar-brand">
-                    <span class="glyphicon glyphicon-menu-hamburger"></span>
-                    HOLIADVICE
-                </a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Ori 2
-                            <span class="caret"></span>
-                        </a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Help
-                            <span class="caret"></span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <header>
-               <div class="container-fluid">
-                   <div class="row">
-                       <div class="col-lg-12">
-                           <div class="slogan">
-                               <span class="slogan-heading">Feel Happy</span>
-                               <span class="slogan-row">You deserve it</span>
-                               
-                           </div>
-                       </div>
-                   </div>
-               </div> 
-            </header>
-            
+<body>
+    <div class="header-wrapper">
+
+        <!--  Top menu      -->
+        <nav class="navbar navbar-inverse navbar-static-top">
             <div class="container-fluid">
-                
-            </div>
-            <div class="carousel slide" data-ride="carousel">
-                
-            </div>
-    </nav>
-
-    <!-- Static navbar -->
-    <nav class="navbar pt-header-nav navbar-static-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#/">
-                    <span class="glyphicon glyphicon-plus-sign"></span>
-                    {{::brand}}
+                <a href="#" class="navbar-brand">
+                    <img src="./imgs/logo.png" alt="HOLIADVICE Logo">
+                    <!--                    HOLIADVICE-->
                 </a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li ng-repeat="item in ::sitemap.main" ng-class="{active: item.active}">
-                        <a href="{{::item.href}}">
-                            <i ng-if="::item.icon" class="fa fa-{{item.icon}}"></i>
-                            {{::item.label}}
+                <ul class="nav navbar-nav pull-right">
+                    <li>
+                        <a href="#">
+                            <img src="avatar.png" alt="">Ori
+                            <span class="caret"></span>
                         </a>
                     </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li ng-repeat="item in ::sitemap.user">
-                        <a href="{{::item.href}}">
-                            <i ng-if="::item.icon" class="fa fa-{{::item.icon}}"></i>
-                            {{::item.label}}
-                        </a>
+                    <li>
+                        <a href="#help">
+                            Help
+                            <span class="caret"></span>
+                    </a>
+                    </li>
+                    <li><a class="nav-list-button" href="#contact">List as a Therapist</a>
                     </li>
                 </ul>
             </div>
-            <!--/.nav-collapse -->
+        </nav>
+        <!--  /Top-menu      -->
+        <div class="container-fluid promo">
+            <h1>Feel Happy</h1>
+            <h2>You deserve it</h2>
+            <h3>Online Integrated medicine treatment center</h3>
         </div>
-    </nav>
 
-    <div class="view container" ng-view>
-    </div>
 
-    <script src="app.js"></script>
+        <!-- Static navbar -->
+
+        <script src="app.js"></script>
 </body>
 
 </html>

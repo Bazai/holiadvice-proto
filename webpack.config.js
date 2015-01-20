@@ -10,6 +10,7 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.coffee$/, loader: "coffee-loader" },
+      { test: /\.jpg$/, loader: "file-loader" },
       { test: /\.png$/, loader: "file-loader" },
       { test: /\.gif$/, loader: "file-loader" },
       { test: /\.(ttf|eot|woff|svg|swf)$/, loader: "file-loader" },
