@@ -7,6 +7,8 @@ require('../../bower_components/fhir.js/dist/ngFhir.js')
 
 require('file?name=index.html!../index.html')
 require('file?name=fhir.json!../fhir.json')
+
+require('file?name=logo.png!../imgs/logo.png')
 require('../less/app.less')
 
 app = require('./module')
