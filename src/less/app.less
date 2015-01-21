@@ -43,7 +43,7 @@
 .promo {
     margin: 105px auto;
     margin-bottom: 0;
-//    width: 50%;
+    //    width: 50%;
     h1 {
         text-align: center;
         font-size: 100px;
@@ -52,7 +52,6 @@
         margin-top: -8px;
         text-align: center;
         font-size: 44px;
-        
     }
     h3 {
         margin: 22px auto;
@@ -71,14 +70,12 @@
         width: 100%;
         background: rgba(0, 0, 0, 0.3);
         text-align: center;
-
         .treat-form-input {
             width: 79%;
             font-size: 16.5px;
             border-radius: 0;
             height: 37px;
         }
-
         .treat-form-button {
             width: 20%;
             font-size: 16.5px;
@@ -87,5 +84,81 @@
         }
     }
 }
-
 /***** SUB PROMO *****/
+
+.sub-promo {
+    margin-bottom: 100px;
+    .sub-promo-text {
+        text-align: center;
+        margin-bottom: 17px;
+        h2 {
+            font-weight: 700;
+            line-height: 36px;
+            margin-bottom: 0;
+        }
+        p {
+            //            font-family: sans-serif;
+            font-size: 14px;
+            font-weight: 200;
+            line-height: 24px;
+            margin-bottom: 0;
+        }
+    }
+    .sub-promo-colors-line {
+        .reddish {
+            height: 75px;
+            content: ' ';
+            background: #fa6767;
+        }
+        .bluish {
+            height: 75px;
+            content: ' ';
+            background: #80d9f6;
+        }
+    }
+}
+/***** Gallery *****/
+
+.gallery {
+    width: 86%;
+    text-align: center;
+
+    .gallery-menu {
+        margin-bottom: 57px;
+    }
+
+    ul.nav-pills {
+        display: inline-block;
+    }
+    li {
+        display: inline;
+    }
+    .nav-pills>li:after {
+       content: " | "
+    }
+    .nav-pills>li:last-child:after {
+       content: ""
+    }
+    .nav-pills>li>a {
+       color: #373737;
+        display: inline;
+    }
+    .nav-pills>li.active>a {
+        color: #fa6767;
+        background-color: transparent;
+    }
+
+    .picture {
+        height: 188px;
+    }
+    .button-row {
+        .btn {
+            color: #868484;
+            border-radius: 0;
+            border: solid 4px #868484;
+        }
+        margin-top: 37px;
+        margin-bottom: 57px;
+    }
+
+}
